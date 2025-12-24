@@ -19,6 +19,8 @@
           stdenv.cc.cc
           pkgs.SDL2
           pkgs.zlib
+          pkgs.libGL
+          pkgs.glib
         ];
 
         NIX_LD = lib.fileContents "${stdenv.cc}/nix-support/dynamic-linker";
